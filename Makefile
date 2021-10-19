@@ -14,11 +14,13 @@ fastdoc:
 	xelatex -shell-escape main.tex
 
 doc:
-	xelatex -shell-escape main.tex
-	biber main
-	xelatex -shell-escape main.tex
-	xelatex -shell-escape main.tex
+	latexmk
+#	xelatex -shell-escape main.tex
+#	biber main
+#	xelatex -shell-escape main.tex
+#	xelatex -shell-escape main.tex
 
 clean:
-	$(RM) *.log *.aux *.bbl *.blg *.synctex.gz *.out *.toc *.lof *.idx *.ilg *.ind *.pdf *.bbl *.bcf *.blg *-blx.aux *-blx.bib *.run.xml *.nav *.pre *.snm *.vrb
+	latexmk -C
+#	$(RM) *.log *.aux *.bbl *.blg *.synctex.gz *.out *.toc *.lof *.idx *.ilg *.ind *.pdf *.bbl *.bcf *.blg *-blx.aux *-blx.bib *.run.xml *.nav *.pre *.snm *.vrb
 	$(RM) -r _minted*
