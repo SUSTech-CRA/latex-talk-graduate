@@ -30,7 +30,7 @@ jobs:
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
-          filename: 'sustech-master-reports-dev-build.zip'
+          filename: 'latex-talk-master.zip'
           exclusions: '*.git* /*node_modules/* .editorconfig'
 
       - name: Upload release artifact
