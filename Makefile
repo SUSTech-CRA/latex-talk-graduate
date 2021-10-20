@@ -21,6 +21,6 @@ doc:
 #	xelatex -shell-escape main.tex
 
 clean:
-	latexmk -C
-#	$(RM) *.log *.aux *.bbl *.blg *.synctex.gz *.out *.toc *.lof *.idx *.ilg *.ind *.pdf *.bbl *.bcf *.blg *-blx.aux *-blx.bib *.run.xml *.nav *.pre *.snm *.vrb
+#	latexmk -C
+	$(RM) *.log *.aux *.bbl *.blg *.synctex.gz *.out *.toc *.lof *.idx *.ilg *.ind *.pdf *.bbl *.bcf *.blg *-blx.aux *-blx.bib *.run.xml *.nav *.pre *.snm *.vrb *.fls *.xdv *.fdb_latexmk
 	$(RM) -r _minted*

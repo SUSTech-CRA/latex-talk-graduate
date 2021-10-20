@@ -26,7 +26,6 @@ jobs:
             apk add make
             apk --no-cache add msttcorefonts-installer fontconfig && update-ms-fonts && fc-cache -f
             make
-            make clean
 
       - name: Archive Release
         uses: thedoctor0/zip-release@master
