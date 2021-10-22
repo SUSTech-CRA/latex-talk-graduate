@@ -11,7 +11,7 @@
 %% Global background setting
 % \usebackgroundtemplate{\includegraphics[width=1.7\paperwidth]{libs/LOGO transparent.png}}
 
-\logo{\includegraphics[scale=0.4]{libs/lib.png}\hspace{12.5cm} \vspace{-0.2cm}}
+\logo{\includegraphics[scale=0.12]{libs/gs_logo.jpg}\hspace{11.5cm} \vspace{-0.2cm}}
 
 %% Packages Used
 \RequirePackage[utf8]{inputenc}
@@ -74,18 +74,18 @@
 {
   \leavevmode%
   \hbox{%
- 
+
   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
     \usebeamerfont{author in head/foot}\insertshortauthor~~\insertshortinstitute
   \end{beamercolorbox}%
- 
+
   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot} \insertshorttitle
     \usebeamerfont{title in head/foot}
   \end{beamercolorbox}%
- 
+
   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
     \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
-    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
   \end{beamercolorbox}}%
   \vskip0pt%
 }
@@ -94,7 +94,7 @@
 
 % command of the example
 \renewcommand{\example}[1]{\textcolor{cyan_theme}{\textbf{#1}}}
-% command of the emphases 
+% command of the emphases
 \renewcommand{\emph}[1]{\textcolor{red}{\textbf{#1}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -102,7 +102,7 @@
 
 %% draw the blocks
 \setbeamertemplate{blocks}[rounded][shadow=true]
-% \setbeamercolor{separation line}{use=structure,bg=structure.fg!50!bg} % color on the top 
+% \setbeamercolor{separation line}{use=structure,bg=structure.fg!50!bg} % color on the top
 
 % block
 \setbeamercolor*{block title}{fg=white, bg=cyan_theme!70}
@@ -171,7 +171,7 @@
 
 % create the source of the image
 \newcommand{\source}[1]{
-    \caption*{\textcolor{cyan_theme}{Fonte:} {#1}} 
+    \caption*{\textcolor{cyan_theme}{Fonte:} {#1}}
 }
 
 % create a command for UFC
@@ -187,7 +187,7 @@
     \normalsize{#1}
 }
 
-% 
+%
 \newcommand{\email}[1]{
     \texttt{
       \href{mailto:#1}{#1}

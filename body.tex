@@ -14,7 +14,7 @@
         \textipa{/'tEk/})
         \begin{itemize}
           \item 生成精美图书的排版系统
-          \item 最初由 高德纳\footnote{1974年图灵奖得主，《计算机程序设计艺术》（The Art of Computer Programming）作者。} (Donald E.~Knuth) 于 1978 年开发  
+          \item 最初由 高德纳\footnote{1974年图灵奖得主，《计算机程序设计艺术》（The Art of Computer Programming）作者。} (Donald E.~Knuth) 于 1978 年开发
           \item 最新版本为 \TeX\ 3.14159265
           \item 漂亮、美观、稳定、通用
           \item 尤其擅长数学公式排版
@@ -84,16 +84,16 @@
 \begin{frame}[fragile]{选择本地编辑器}
   \begin{itemize}
     \item<+-> 专用型
-  
+
       \begin{itemize}
         \item TeXworks：\TeX{} Live 自带 \faWindows{} \faApple{} \faLinux{}
         \item \emph{TeXstudio}：功能丰富，对新手友好 \faWindows{} \faApple{} \faLinux{}
         \item TeXShop：Mac\TeX{} 自带 \faApple{}
         \item WinEdt：功能丰富，收费 \faWindows{}
       \end{itemize}
-  
+
     \item<+-> 通用型
-  
+
       \begin{itemize}
         \item \emph{Visual Studio Code}：借助插件 \pkg{LaTeX Workshop} (James Yu (余剑峤)@ CSE) + \pkg{LaTeX Utilities}
         \item Atom：听说很卡？
@@ -120,10 +120,12 @@
     \begin{itemize}
       \item Overleaf
       \begin{itemize}
+          \item 需要稳定网络或者代理访问
           \item \url{https://www.overleaf.com}
       \end{itemize}
       \item ShareLaTeX by 计算机研究协会
       \begin{itemize}
+        \item 校内部署的 Overleaf 社区版，缺少部分功能（如 |\cite| 命令自动提示）
         \item \url{https://sharelatex.cra.moe/}
     \end{itemize}
       \end{itemize}
@@ -148,7 +150,7 @@
   \end{frame}
 
 \subsection{常用命令}
-  
+
 \begin{frame}[fragile]{\LaTeX“命令”}
     \framesubtitle{\emph{宏} (Macro)、或者\emph{控制序列} (control sequence)}
   \begin{itemize}
@@ -174,7 +176,7 @@
     \end{columns}
   \end{itemize}
   \end{frame}
-  
+
   % \begin{frame}[fragile]{\LaTeX{} 常用命令}
   %   \begin{exampleblock}{简单命令}
   % \centering
@@ -194,7 +196,7 @@
   \begin{frame}[fragile]{谋篇布局}
   \begin{itemize}
     \item 文档部件
-  
+
       \begin{itemize}
         \item 标题：|\title|、|\author|、|\date| $\to$ |\maketitle|
         \item 摘要：|abstract| 环境
@@ -204,9 +206,9 @@
         \item 引用：|\label|、|\cite|、|\ref|
         \item 文献：|\bibliography|
       \end{itemize}
-  
+
     \item 文档划分
-  
+
       \begin{itemize}
         \item 凤头猪肚豹尾：|\frontmatter|、|\mainmatter|、|\backmatter|
         \item 分文件编译：|\include|、|\input|
@@ -225,7 +227,7 @@
       \item 居中：|\centering| 或 |center| 环境
     \end{itemize}
   \end{frame}
-    
+
 
   \begin{frame}{\LaTeX{} 命令举例}
     \cmdxmp{chapter}{前言}{\heiti 第 1 章\hspace{1em} 前言}
@@ -233,7 +235,7 @@
       \hspace{1em} 这个题目实在太长了放到目录里面不太好看}
     \cmdxmp{footnote}{我是可爱的脚注}{前方高能\footnote{我是可爱的脚注}}
     \end{frame}
-    
+
   \subsection{环境}
   \begin{frame}[fragile]{\LaTeX{} 常用命令}
   \begin{exampleblock}{环境}
@@ -247,7 +249,7 @@
   \end{tabular}
   \end{exampleblock}
   \end{frame}
-  
+
 \subsection{列表}
 \begin{frame}[fragile]{\LaTeX{} 环境举例}
     \vspace{1em}
@@ -273,7 +275,7 @@
     \end{itemize}
       \end{minipage}
     % \smallskip
-    
+
     \begin{minipage}{0.4\linewidth}
     \begin{lstlisting}
     \begin{enumerate}
@@ -292,7 +294,7 @@
       \end{minipage}
     \end{frame}
     %
-    
+
   \begin{frame}[fragile]{列表与枚举}
     \begin{columns}
     \begin{column}{.6\textwidth}
@@ -330,9 +332,9 @@
     }
     \end{column}
     \end{columns}
-    
+
     \end{frame}
-    
+
 
 
     \subsection{数学公式}
@@ -357,44 +359,44 @@
         \item Mathpix Snip 识别图片导出
         \end{itemize}
         \end{frame}
-    
-        
+
+
     \begin{frame}[fragile]{\LaTeX{} 数学公式}
-    
+
     \begin{columns}
     \begin{column}{.5\textwidth}
     \lstset{language=[LaTeX]TeX}
     \begin{lstlisting}[basicstyle=\ttfamily\small]
     $V = \frac{4}{3}\pi r^3$
-    
+
     \[
       V = \frac{4}{3}\pi r^3
     \]
-    
+
     \begin{equation}
     \label{eq:vsphere}
     V = \frac{4}{3}\pi r^3
     \end{equation}
     \end{lstlisting}
     \end{column}
-    
+
     \begin{column}{.5\textwidth}
     $V = \frac{4}{3}\pi r^3$
-    
+
     \[
       V = \frac{4}{3}\pi r^3
     \]
-    
+
     \begin{equation}
     \label{eq:vsphere}
     V = \frac{4}{3}\pi r^3
     \end{equation}
     \end{column}
     \end{columns}
-    
+
     \end{frame}
 
-    
+
     \subsection{目录}
     \begin{frame}[fragile]{层次与目录生成}
     \begin{columns}
@@ -421,7 +423,7 @@
     第一个趣闻
     \end{column}
     \end{columns}
-    
+
     \end{frame}
 
     \subsection{插图，表格，交叉引用}
@@ -433,7 +435,7 @@
         |\ref{name}|
         \end{itemize}
       \bigskip
-      
+
         \begin{minipage}{0.7\linewidth}
           \lstset{language=[LaTeX]TeX}
           \begin{lstlisting}
@@ -453,7 +455,7 @@
        {\footnotesize\heiti 图~1. 南科大校徽。}
         \end{minipage}
       \end{frame}
-      
+
       \begin{frame}[fragile]{交叉引用与插入表格}
         \begin{columns}
         \column{.6\textwidth}
@@ -483,11 +485,11 @@
       1 & 第一\\
       2  & 第二\\\hline
       \end{tabular}\\[5pt]
-      
+
       \normalsize 公式~(\ref{eq:vsphere})编号与含义请参见表~1。
         \end{columns}
       \end{frame}
-      
+
       \begin{frame}[fragile]{浮动体}
       \begin{itemize}
       \item 初学者最“捉摸不透”的特性之一 \url{https://liam.page/2017/03/11/floats-in-LaTeX-basic}
@@ -502,38 +504,38 @@
       \item 温馨提示：图标题一般在下方，表标题一般在上方
       \end{itemize}
       \end{frame}
-      
+
       \begin{frame}[fragile]
         \frametitle{作图与插图}
         \begin{itemize}
           \item 外部插入
-      
+
             \begin{itemize}
               \item Mathematica、MATLAB
               \item PowerPoint、Visio、Adobe Illustrator、Inkscape
               \item Python \pkg{Matplotlib} 库、\texttt{Plots.jl}、R、Plotly 等
               \item draw.io \url{https://draw.io/}、ProcessOn \url{https://www.processon.com/} 等在线绘图网站
             \end{itemize}
-      
+
           \item \TeX 内联
-      
+
             \begin{itemize}
               \item Asymptote
               \item \alert{\pkg{pgf}/\pkg{TikZ}、\pkg{pgfplots}}
             \end{itemize}
-      
+
           \item 插图格式
-      
+
             \begin{itemize}
               \item 矢量图：|.pdf| 或 |.eps|
               \item 位图：|.jpg| 或 |.png|
               \item 不（完全）支持 |.svg|、|.bmp|
             \end{itemize}
-      
+
           \item 参考：如何在论文中画出漂亮的插图？\link{https://www.zhihu.com/question/21664179}
         \end{itemize}
       \end{frame}
-      
+
       \begin{frame}[fragile]{表格绘制}
         \begin{itemize}
           \item 使用 \pkg{booktabs}（三线表）、\pkg{longtables}（跨页表）、\pkg{multirow}（单元格内换行） 等宏包
@@ -545,7 +547,7 @@
             \end{itemize}
         \end{itemize}
       \end{frame}
-      
+
 
 
   \subsection{文献管理}
@@ -554,14 +556,14 @@
     \begin{itemize}
       \item 建议自动生成\pause （你只有三篇参考文献？）\pause
       \item |.bib| 数据库
-    
+
         \begin{itemize}
           \item Google Scholar 可直接复制：点击 \faQuoteRight \quad -> BibTeX
           \item 用 EndNote、Jabref 等生成
         \end{itemize} \pause
-    
+
       \item 传统方法（大部分会议、期刊模板）：\BibTeX  后端
-    
+
         \begin{itemize}
           \item 控制文献、引用样式：\pkg{natbib} 宏包
           \item 国家标准 GB/T 7714--2015
@@ -569,20 +571,20 @@
                 \link{https://github.com/Haixing-Hu/GBT7714-2005-BibTeX-Style/files/153951/GBT.7714-2015.pdf}：
                 \alert{\pkg{gbt7714} 宏包}
         \end{itemize} \pause
-    
+
       \item 现代方法：\pkg{biber} 后端 + \pkg{biblatex} 宏包
-    
+
         \begin{itemize}
           \item 国家标准：\pkg{biblatex-gb7714-2015} 宏包
         \end{itemize} \pause
-    
+
       \item 需多次编译
         \begin{itemize}
           \item \pdfLaTeX -> \BibTeX -> \pdfLaTeX -> \pdfLaTeX
           \item \XeLaTeX -> \BibTeX -> \XeLaTeX -> \XeLaTeX
           \item 一键使用：\pkg{VS Code plugin}, \pkg{MakeFile}, \pkg{Batch} script, \pkg{latexmk}
         \end{itemize}
-      
+
     \end{itemize}
 \end{frame}
 
@@ -632,7 +634,7 @@
 % % \begin{lstlisting}
 % %   “真理只有一个，而究竟谁发现了真理，不依靠主观的夸张，而依靠客观的实践。” -- 毛泽东\cite{毛泽东1949新民主主义论}。
 % % \end{lstlisting}
-      
+
 % % “真理只有一个，而究竟谁发现了真理，不依靠主观的夸张，而依靠客观的实践。” -- 毛泽东\cite{毛泽东1949新民主主义论}。
 % %     \end{minipage}\hspace{1.5cm}
 % %     \begin{minipage}{0.4\linewidth}
