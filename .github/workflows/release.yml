@@ -30,14 +30,14 @@ jobs:
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
-          filename: 'latex-talk-master.zip'
+          filename: 'latex-talk-graduate.zip'
           exclusions: '*.git* /*node_modules/* .editorconfig'
 
       - name: Upload release artifact
         uses: actions/upload-artifact@v2
         with:
-          name: 'latex-talk-master'
-          path: 'latex-talk-master.zip'
+          name: 'latex-talk-graduate'
+          path: 'latex-talk-graduate.zip'
 
       - name: Upload Pre-release artifact
         uses: actions/upload-artifact@v2
@@ -63,4 +63,4 @@ jobs:
           title: "Dev Build（预发布）"
           files: |
             pre-release-artifacts_action_build/main.pdf
-            latex-talk-master/latex-talk-master.zip
+            latex-talk-graduate/latex-talk-graduate.zip

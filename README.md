@@ -1,6 +1,6 @@
 # 《LaTeX 入门 - 以研究生论文模版为例》 南方科技大学研究生院材料
 
-[预览PDF(点此)](https://github.com/SUSTech-CRA/latex-talk-master/releases/download/dev-latest/main.pdf)
+[预览PDF(点此)](https://github.com/SUSTech-CRA/latex-talk-graduate/releases/download/dev-latest/main.pdf)
 
 ## 致谢
 
