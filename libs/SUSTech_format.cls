@@ -11,7 +11,7 @@
 %% Global background setting
 % \usebackgroundtemplate{\includegraphics[width=1.7\paperwidth]{libs/LOGO transparent.png}}
 
-\logo{\includegraphics[scale=0.12]{libs/gs_logo.jpg}\hspace{11.5cm} \vspace{-0.2cm}}
+\logo{\includegraphics[scale=0.12]{libs/gs_logo.jpg}\vspace{-0.2cm}}
 
 %% Packages Used
 \RequirePackage[utf8]{inputenc}
@@ -56,6 +56,8 @@
 \useinnertheme{rectangles}
 \useoutertheme[subsection=false]{miniframes}
 \setbeamertemplate{navigation symbols}{}
+\let\oldfootnote\footnote
+\renewcommand\footnote[1][]{\oldfootnote[frame,#1]}
 
 
 \setbeamercolor{section in head/foot}{bg=cyan_theme, fg=white}
@@ -101,7 +103,7 @@
 % create the blocks of the beamer template
 
 %% draw the blocks
-\setbeamertemplate{blocks}[rounded][shadow=true]
+% \setbeamertemplate{blocks}[rounded][shadow=true]
 % \setbeamercolor{separation line}{use=structure,bg=structure.fg!50!bg} % color on the top
 
 % block
